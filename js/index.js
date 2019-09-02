@@ -95,4 +95,10 @@ phone.textContent = siteContent["contact"]["phone"]
 const email = document.querySelector(".contact p:nth-of-type(3)");
 email.textContent = siteContent["contact"]["email"]
 
-console.log(email)
+// footer section
+
+const footerData = document.querySelector("footer p");
+footerData.textContent = siteContent["footer"]["copyright"];
+
+
+console.log(footerData)
