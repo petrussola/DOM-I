@@ -54,5 +54,11 @@ textJumbotron.textContent = siteContent.cta["button"];
 const imageJumbotron = document.getElementById('cta-img');
 imageJumbotron.setAttribute('src', siteContent["cta"]["img-src"]);
 
+// main content section
 
-console.log(imageJumbotron)
+const firstTitle = document.querySelector('.top-content h4:nth-of-type(1)');
+firstTitle.textContent = siteContent["main-content"]["features-h4"];
+const firstParagraph = document.querySelector('.top-content p:nth-of-type(1)');
+firstParagraph.textContent = siteContent["main-content"]["features-content"];
+
+console.log(firstParagraph)
