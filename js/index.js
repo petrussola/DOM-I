@@ -116,4 +116,10 @@ newAnchorFirst.textContent = "First";
 navigation.appendChild(newAnchorLast);
 navigation.prepend(newAnchorFirst);
 
+// modify styles
+
+// color text CTA
+
+document.querySelector(".cta-text h1").style.color = "red";
+
 console.log(newAnchorLast)
