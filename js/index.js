@@ -43,7 +43,10 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // Header section
 
-const nav = document.querySelector('nav');
+const nav = document.querySelectorAll('nav a');
+nav.forEach( (item, i) => item.textContent = siteContent["nav"] + "[\"nav-item-" + i + "\"]" );
+
+console.log(nav);
 
 // CTA section
 
@@ -100,5 +103,10 @@ email.textContent = siteContent["contact"]["email"]
 const footerData = document.querySelector("footer p");
 footerData.textContent = siteContent["footer"]["copyright"];
 
+// change color of nav
 
-console.log(footerData)
+const navColor = document.querySelectorAll("nav a")
+navColor.forEach ( item => item.style.color = 'green')
+
+
+console.log(navColor)
