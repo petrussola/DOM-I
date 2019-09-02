@@ -56,14 +56,22 @@ imageJumbotron.setAttribute('src', siteContent["cta"]["img-src"]);
 
 // main content section
 
-const firstTitle = document.querySelector('h4:nth-of-type(1)');
-firstTitle.textContent = siteContent["main-content"]["features-h4"];
-const firstParagraph = document.querySelector('.top-content p:nth-of-type(1)');
-firstParagraph.textContent = siteContent["main-content"]["features-content"];
+// const firstTitle = document.querySelector('h4:nth-of-type(1)');
+// firstTitle.textContent = siteContent["main-content"]["features-h4"];
+// const firstParagraph = document.querySelector('.top-content p:nth-of-type(1)');
+// firstParagraph.textContent = siteContent["main-content"]["features-content"];
+
+const firstTitle = document.querySelectorAll('.top-content h4');
+firstTitle[0].textContent = siteContent["main-content"]["features-h4"];
+firstTitle[1].textContent = siteContent["main-content"]["about-h4"];
+
+const firstParagraph = document.querySelectorAll('.top-content p');
+firstParagraph[0].textContent = siteContent["main-content"]["features-content"]
+firstParagraph[1].textContent = siteContent["main-content"]["about-content"]
 
 // main content image
 
 const imageMainContent = document.getElementById('middle-img');
 imageMainContent.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-console.log(secondTitle)
+console.log(firstTitle[0])
