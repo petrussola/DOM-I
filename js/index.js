@@ -130,6 +130,7 @@ buttonElement.style.border = "3px dashed blue";
 // event to click buttonq
 
 buttonElement.addEventListener('click', e => {
-  buttonElement.style.border = "1px solid green";
+  e.target.style.border = "1px solid green";
+  console.log(e);
 });
-// console.log(e);
+
