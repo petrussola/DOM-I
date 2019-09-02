@@ -48,10 +48,11 @@ const nav = document.querySelector('nav');
 // CTA section
 
 const titleJumbotron = document.querySelector('.cta-text h1');
-titleJumbotron.textContent = siteContent.cta.h1;
+titleJumbotron.textContent = siteContent.cta["h1"];
 const textJumbotron = document.querySelector('.cta-text button');
-textJumbotron.textContent = siteContent.cta.button;
+textJumbotron.textContent = siteContent.cta["button"];
+const imageJumbotron = document.getElementById('cta-img');
+imageJumbotron.setAttribute('src', siteContent["cta"]["img-src"]);
 
 
-
-console.log(titleJumbotron)
+console.log(imageJumbotron)
