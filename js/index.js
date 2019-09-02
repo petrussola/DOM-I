@@ -56,9 +56,14 @@ imageJumbotron.setAttribute('src', siteContent["cta"]["img-src"]);
 
 // main content section
 
-const firstTitle = document.querySelector('.top-content h4:nth-of-type(1)');
+const firstTitle = document.querySelector('h4:nth-of-type(1)');
 firstTitle.textContent = siteContent["main-content"]["features-h4"];
 const firstParagraph = document.querySelector('.top-content p:nth-of-type(1)');
 firstParagraph.textContent = siteContent["main-content"]["features-content"];
 
-console.log(firstParagraph)
+// main content image
+
+const imageMainContent = document.getElementById('middle-img');
+imageMainContent.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+console.log(secondTitle)
