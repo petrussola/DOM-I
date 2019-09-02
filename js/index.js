@@ -122,4 +122,9 @@ navigation.prepend(newAnchorFirst);
 
 document.querySelector(".cta-text h1").style.color = "red";
 
-console.log(newAnchorLast)
+// change style button CTA
+
+const buttonElement = document.querySelector(".cta-text button");
+buttonElement.style.border = "3px dashed blue";
+
+console.log(buttonElement.style)
