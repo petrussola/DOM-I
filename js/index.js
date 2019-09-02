@@ -108,5 +108,9 @@ navColor.forEach ( item => item.style.color = 'green')
 
 // add nav anchor item
 
+const navigation = document.querySelector("nav");
+const newAnchorLast = document.createElement('a');
+newAnchorLast.textContent = "I am a new anchor";
+navigation.appendChild(newAnchorLast);
 
-// console.log(navColor)
+console.log(newAnchorLast)
