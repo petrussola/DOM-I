@@ -127,4 +127,9 @@ document.querySelector(".cta-text h1").style.color = "red";
 const buttonElement = document.querySelector(".cta-text button");
 buttonElement.style.border = "3px dashed blue";
 
-console.log(buttonElement.style)
+// event to click buttonq
+
+buttonElement.addEventListener('click', e => {
+  buttonElement.style.border = "1px solid green";
+});
+// console.log(e);
