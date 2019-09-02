@@ -110,7 +110,10 @@ navColor.forEach ( item => item.style.color = 'green')
 
 const navigation = document.querySelector("nav");
 const newAnchorLast = document.createElement('a');
-newAnchorLast.textContent = "I am a new anchor";
+const newAnchorFirst = document.createElement('a');
+newAnchorLast.textContent = "Last";
+newAnchorFirst.textContent = "First";
 navigation.appendChild(newAnchorLast);
+navigation.prepend(newAnchorFirst);
 
 console.log(newAnchorLast)
